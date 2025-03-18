@@ -1,8 +1,10 @@
+import Topbar from "./common/Topbar.tsx";
+
 function App() {
 
   return (
     <>
-      <div>hello, world</div>
+      <Topbar />
     </>
   );
 }

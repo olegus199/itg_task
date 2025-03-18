@@ -1,0 +1,28 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.input {
+  width: 100%;
+  padding: .375rem .5rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: .875rem;
+  border: 1px solid $blue_gray_200;
+  border-radius: .25rem;
+  color: $blue_gray_100;
+  background-color: $blue_gray_300;
+
+  &::placeholder {
+    color: $blue_gray_100;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
