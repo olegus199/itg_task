@@ -20,7 +20,7 @@ const Topbar: FC = () => {
           <Input
             type="search"
             placeholder="Поиск"
-            paddingRight="28"
+            paddingRight="1.75rem"
           />
           <FaMagnifyingGlass className={styles.search_icon} />
         </div>
