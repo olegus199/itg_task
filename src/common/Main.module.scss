@@ -1,0 +1,13 @@
+@use "../variables" as *;
+
+.main {
+  display: flex;
+  align-items: start;
+  margin-top: $topbar_height;
+  height: calc(100vh - $topbar_height);
+}
+
+.sidemenu {
+  position: relative;
+  height: 100%;
+}

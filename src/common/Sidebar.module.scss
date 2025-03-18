@@ -1,0 +1,30 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.sidebar {
+  position: fixed;
+  top: $topbar_height;
+  left: 0;
+  width: fit-content;
+  height: calc(100vh - $topbar_height);
+  border-right: 1px solid $blue_gray_200;
+  background-color: $white;
+  z-index: 9999;
+}
+
+.tab {
+  @include reset_button_defaults();
+  @include flex_center();
+
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.active {
+  color: $primary_100;
+}
+
+.sidebar_icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
