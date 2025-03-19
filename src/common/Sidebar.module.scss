@@ -2,14 +2,10 @@
 @use "../mixins" as *;
 
 .sidebar {
-  position: fixed;
-  top: $topbar_height;
-  left: 0;
   width: fit-content;
-  height: calc(100vh - $topbar_height);
-  border-right: 1px solid $blue_gray_200;
+  height: 100%;
+  border-right: $main_border;
   background-color: $white;
-  z-index: 9999;
 }
 
 .tab {
