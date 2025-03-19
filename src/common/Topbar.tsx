@@ -5,7 +5,7 @@ import { GoGear } from "react-icons/go";
 import logo from "../assets/simpleOneLogo.svg";
 import avatar from "../assets/avatar.jpg";
 import ButtonBorder from "../UI/ButtonBorder.tsx";
-import Input from "../UI/Input.tsx";
+import SearchInput from "../UI/SearchInput.tsx";
 
 const Topbar: FC = () => {
   return (
@@ -13,23 +13,18 @@ const Topbar: FC = () => {
       <img
         src={logo}
         alt="logo"
+        draggable={false}
         className={styles.logo}
       />
       <div className={styles.actions}>
-        <div className={styles.input_container}>
-          <Input
-            type="search"
-            placeholder="Поиск"
-            paddingRight="1.75rem"
-          />
-          <FaMagnifyingGlass className={styles.search_icon} />
-        </div>
+        <SearchInput Icon={FaMagnifyingGlass} />
         <div className={styles.meta_info}>
           <div className={styles.avatar_wrapper}>
             <img
               src={avatar}
               alt="avatar"
               className={styles.avatar}
+              draggable={false}
             />
           </div>
           <p className={styles.name}>Максим Галактионов</p>
