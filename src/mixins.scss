@@ -55,3 +55,18 @@
   background-color: $blue_gray_300;
   box-shadow: $full_inner_shadow;
 }
+
+@mixin custom_scrollbar($track, $thumb) {
+  &::-webkit-scrollbar {
+    height: 0.125rem;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $track;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $thumb;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: $neutral_100;
+  }
+}
