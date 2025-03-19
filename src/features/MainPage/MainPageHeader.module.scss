@@ -2,8 +2,14 @@
 @use "../../mixins" as *;
 
 .header {
+  position: sticky;
+  top: 0;
   padding: 1rem;
   background-color: $white;
+}
+
+.scrolled {
+  box-shadow: 0 .25rem .25rem rgba(#000, .04);
 }
 
 .header_content {

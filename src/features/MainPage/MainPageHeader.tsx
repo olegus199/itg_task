@@ -2,11 +2,15 @@ import styles from "./MainPageHeader.module.scss";
 import { FC } from "react";
 import ButtonBorder from "../../UI/ButtonBorder.tsx";
 
+interface MainPageHeaderProps {
+  isScrolled: boolean;
+}
+
 const buttonPadding = ".375rem .75rem";
 
-const MainPageHeader: FC = () => {
+const MainPageHeader: FC<MainPageHeaderProps> = ({ isScrolled }) => {
   return (
-    <header className={styles.header}>
+    <header className={`${styles.header} ${isScrolled && styles.scrolled}`}>
       <div className={styles.header_content}>
         <div className={styles.main_content}>
           <p className={styles.title}>Подзадача</p>
