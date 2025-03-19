@@ -1,0 +1,31 @@
+@use "../../variables" as *;
+@use "../../mixins" as *;
+
+.header {
+  padding: 1rem;
+  background-color: $white;
+}
+
+.header_content {
+  @include flex_space_between();
+
+  max-width: $main_content_width;
+  margin: 0 auto;
+}
+
+.main_content, .action_buttons {
+  @include flex_align_center();
+}
+
+.title {
+  margin-right: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  line-height: unset;
+}
+
+.action_buttons {
+  button:not(:last-child) {
+    margin-right: .25rem;
+  }
+}
