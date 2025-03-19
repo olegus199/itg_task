@@ -5,6 +5,7 @@
   @include reset_button_defaults();
   @include flex_center();
 
+  flex-shrink: 0;
   width: 100%;
   padding: .375rem;
   border: 1px solid $blue_gray_200;
