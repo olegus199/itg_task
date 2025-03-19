@@ -1,6 +1,6 @@
 import styles from "./Topbar.module.scss";
 import { FC } from "react";
-import { FaMagnifyingGlass } from "react-icons/fa6";
+import { PiMagnifyingGlass } from "react-icons/pi";
 import { GoGear } from "react-icons/go";
 import logo from "../assets/simpleOneLogo.svg";
 import avatar from "../assets/avatar.jpg";
@@ -17,7 +17,10 @@ const Topbar: FC = () => {
         className={styles.logo}
       />
       <div className={styles.actions}>
-        <SearchInput Icon={FaMagnifyingGlass} />
+        <SearchInput
+          Icon={PiMagnifyingGlass}
+          placeholder="Поиск"
+        />
         <div className={styles.meta_info}>
           <div className={styles.avatar_wrapper}>
             <img

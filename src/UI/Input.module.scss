@@ -2,14 +2,7 @@
 @use "../mixins" as *;
 
 .input {
-  width: 100%;
-  padding: .375rem .5rem;
-  font-family: "Open Sans", sans-serif;
-  font-size: .875rem;
-  border: 1px solid $blue_gray_200;
-  border-radius: .25rem;
-  color: $blue_gray_100;
-  background-color: $blue_gray_300;
+  @include input();
 
   &::placeholder {
     color: $blue_gray_100;
@@ -18,6 +11,10 @@
   &:focus {
     outline: none;
   }
+}
+
+.in_body {
+  color: $black;
 }
 
 input[type="search"]::-webkit-search-decoration,

@@ -26,6 +26,7 @@
   border-radius: 0;
   outline: none;
   background-color: transparent;
+  line-height: 1.25rem;
   cursor: pointer;
 }
 
@@ -40,4 +41,17 @@
   }
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+@mixin input() {
+  width: 100%;
+  padding: .375rem .5rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: .875rem;
+  border: none;
+  border-radius: .25rem;
+  line-height: 1.25rem;
+  color: $blue_gray_100;
+  background-color: $blue_gray_300;
+  box-shadow: $full_inner_shadow;
 }

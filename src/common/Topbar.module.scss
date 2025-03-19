@@ -9,7 +9,7 @@
   left: 0;
   width: 100%;
   padding: .5rem 1rem;
-  border-bottom: $main_border;
+  box-shadow: $bottom_inner_shadow;
   background-color: $white;
   z-index: 9999;
 }

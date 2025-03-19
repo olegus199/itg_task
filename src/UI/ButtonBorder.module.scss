@@ -8,13 +8,13 @@
   flex-shrink: 0;
   padding: .375rem;
   font-weight: 600;
-  border: $main_border;
+  box-shadow: $full_inner_shadow;
   border-radius: .25rem;
   background-color: $white;
 }
 
 .save_button {
   color: $white;
+  box-shadow: none;
   background-color: $primary_200;
-  border: 1px solid $primary_200;
 }

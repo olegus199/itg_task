@@ -15,6 +15,9 @@ $blue_gray_100: #abb1ba;
 $blue_gray_200: #d5d8dd;
 $blue_gray_300: #fcfcfd;
 
-$topbar_height: 3.1875rem;
-$main_border: 1px solid $blue_gray_200;
+$topbar_height: 3rem;
+$full_inner_shadow: 0 0 0 1px $blue_gray_200 inset;
+$bottom_inner_shadow: 0 -1px 0 $blue_gray_200 inset;
+$right_inner_shadow: -1px 0 0 $blue_gray_200 inset;
+$bottom_right_inner_shadow: -1px -1px 0 $blue_gray_200 inset;
 $main_content_width: 106.25rem;

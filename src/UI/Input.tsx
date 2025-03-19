@@ -3,19 +3,26 @@ import { FC } from "react";
 
 interface InputProps {
   type: string;
+  isInBody?: boolean;
   defaultValue?: string;
   placeholder?: string;
   paddingRight?: string;
 }
 
-const Input: FC<InputProps> = ({ type, placeholder, defaultValue, paddingRight }) => {
+const Input: FC<InputProps> = ({
+  type,
+  placeholder,
+  defaultValue,
+  paddingRight,
+  isInBody,
+}) => {
   return (
     <input
       type={type}
       placeholder={placeholder}
       defaultValue={defaultValue}
       style={{ paddingRight }}
-      className={styles.input}
+      className={`${styles.input} ${isInBody && styles.in_body}`}
     />
   );
 };

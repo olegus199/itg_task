@@ -4,7 +4,7 @@
 .sidebar {
   width: fit-content;
   height: 100%;
-  border-right: $main_border;
+  box-shadow: $right_inner_shadow;
   background-color: $white;
 }
 
