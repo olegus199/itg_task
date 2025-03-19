@@ -3,14 +3,15 @@ import { FC, ReactNode } from "react";
 
 interface BorderContainerProps {
   children: ReactNode;
-  maxWidth: string;
+  padding?: string;
+  isSaveAndQuitButton?: boolean;
 }
 
-const ButtonBorder: FC<BorderContainerProps> = ({ children, maxWidth }) => {
+const ButtonBorder: FC<BorderContainerProps> = ({ children, padding, isSaveAndQuitButton }) => {
   return (
     <button
-      style={{ maxWidth }}
-      className={styles.button}
+      style={{ padding }}
+      className={`${styles.button} ${isSaveAndQuitButton && styles.save_button}`}
     >
       {children}
     </button>

@@ -29,7 +29,7 @@ const Topbar: FC = () => {
           </div>
           <p className={styles.name}>Максим Галактионов</p>
         </div>
-        <ButtonBorder maxWidth="fit-content">
+        <ButtonBorder>
           <GoGear className={styles.gear_icon} />
         </ButtonBorder>
       </div>

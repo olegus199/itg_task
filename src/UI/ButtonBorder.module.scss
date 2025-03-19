@@ -6,9 +6,15 @@
   @include flex_center();
 
   flex-shrink: 0;
-  width: 100%;
   padding: .375rem;
-  border: 1px solid $blue_gray_200;
+  font-weight: 600;
+  border: $main_border;
   border-radius: .25rem;
   background-color: $white;
+}
+
+.save_button {
+  color: $white;
+  background-color: $primary_200;
+  border: 1px solid $primary_200;
 }

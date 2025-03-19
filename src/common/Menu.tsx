@@ -34,7 +34,7 @@ const Menu: FC = () => {
           Icon={LuFilter}
           placeholder="Поиск по меню"
         />
-        <ButtonBorder maxWidth="fit-content">
+        <ButtonBorder>
           <RiUnpinLine className={styles.unpin_icon} />
         </ButtonBorder>
       </div>
