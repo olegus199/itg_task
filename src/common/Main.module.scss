@@ -1,6 +1,8 @@
 @use "../variables" as *;
 @use "../mixins" as *;
 
+$topbar_height: 3rem;
+
 .main {
   display: flex;
   margin-top: $topbar_height;
@@ -12,4 +14,17 @@
   display: flex;
   align-items: start;
   height: calc(100vh - $topbar_height);
+}
+
+@media (max-width: 767px) {
+  $topbar_height: 3.5rem;
+
+  .main {
+    margin-top: $topbar_height;
+    height: calc(100vh - $topbar_height);
+  }
+
+  .sidemenu {
+    display: none;
+  }
 }

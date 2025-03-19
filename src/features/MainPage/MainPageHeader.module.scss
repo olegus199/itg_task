@@ -35,3 +35,24 @@
     margin-right: .25rem;
   }
 }
+
+@media (max-width: 767px) {
+  .main_content {
+    @include flex_space_between();
+
+    width: 100%;
+  }
+
+  .title {
+    font-family: "Open Sans", sans-serif;
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    color: $blue_gray_100;
+  }
+
+  .action_buttons {
+    display: none;
+  }
+}

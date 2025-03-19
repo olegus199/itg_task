@@ -7,7 +7,7 @@
   width: 100vw;
   max-width: 17.5rem;
   height: 100%;
-  background-color: $blue_gray_300;
+  background-color: $blue_gray_400;
   box-shadow: $right_inner_shadow;
   overflow-y: scroll;
 }
@@ -33,5 +33,11 @@
 
 .chevron {
   margin-right: .5rem;
-  color: $blue_gray_100;
+  color: $blue_gray_200;
+}
+
+@media (max-width: 991px) {
+  .menu {
+    display: none;
+  }
 }

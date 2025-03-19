@@ -6,6 +6,7 @@ import logo from "../assets/simpleOneLogo.svg";
 import avatar from "../assets/avatar.jpg";
 import ButtonBorder from "../UI/ButtonBorder.tsx";
 import SearchInput from "../UI/SearchInput.tsx";
+import Sidebar from "./Sidebar.tsx";
 
 const Topbar: FC = () => {
   return (
@@ -16,6 +17,9 @@ const Topbar: FC = () => {
         draggable={false}
         className={styles.logo}
       />
+      <div className={styles.sidebar_container}>
+        <Sidebar />
+      </div>
       <div className={styles.actions}>
         <SearchInput
           Icon={PiMagnifyingGlass}

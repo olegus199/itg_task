@@ -11,13 +11,13 @@ $neutral_100: #505050;
 $neutral_200: #c4c4c4;
 $neutral_300: #f0f0f0;
 
-$blue_gray_100: #abb1ba;
-$blue_gray_200: #d5d8dd;
-$blue_gray_300: #fcfcfd;
+$blue_gray_100: #5c6470;
+$blue_gray_200: #abb1ba;
+$blue_gray_300: #d5d8dd;
+$blue_gray_400: #fcfcfd;
 
-$topbar_height: 3rem;
-$full_inner_shadow: 0 0 0 1px $blue_gray_200 inset;
-$bottom_inner_shadow: 0 -1px 0 $blue_gray_200 inset;
-$right_inner_shadow: -1px 0 0 $blue_gray_200 inset;
-$bottom_right_inner_shadow: -1px -1px 0 $blue_gray_200 inset;
+$full_inner_shadow: 0 0 0 1px $blue_gray_300 inset;
+$bottom_inner_shadow: 0 -1px 0 $blue_gray_300 inset;
+$right_inner_shadow: -1px 0 0 $blue_gray_300 inset;
+$bottom_right_inner_shadow: -1px -1px 0 $blue_gray_300 inset;
 $main_content_width: 106.25rem;

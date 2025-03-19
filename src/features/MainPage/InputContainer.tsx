@@ -40,7 +40,7 @@ const InputContainer: FC<InputContainerProps> = ({
                 key={idx}
                 className={styles.tag}
               >
-                <p>{v}</p>
+                <p className={styles.tag_text}>{v}</p>
                 {defaultValue.length > 1 && (
                   <HiMiniXMark className={styles.tag_xmark} />
                 )}

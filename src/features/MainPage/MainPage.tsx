@@ -95,8 +95,8 @@ const bottomInputs: IInput[] = [
     hasAddAction: true,
   },
   {
-    label: "Ответственный",
     defaultValue: ["Андрей Пивоваров"],
+    label: "Ответственный",
     hasSearchAction: true,
     hasAddAction: true,
   },

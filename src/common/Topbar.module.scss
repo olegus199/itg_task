@@ -18,6 +18,10 @@
   margin-right: 1rem;
 }
 
+.sidebar_container {
+  display: none;
+}
+
 .actions, .meta_info {
   @include flex_align_center();
 }
@@ -47,4 +51,22 @@
 
 .gear_icon {
   @include button_icon();
+}
+
+@media (max-width: 767px) {
+  .topbar {
+    padding: .75rem 1rem;
+  }
+
+  .sidebar_container {
+    display: block;
+  }
+
+  .logo, .name {
+    display: none;
+  }
+
+  .avatar_wrapper {
+    width: 1.5rem;
+  }
 }

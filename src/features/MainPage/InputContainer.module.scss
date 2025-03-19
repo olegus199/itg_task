@@ -47,6 +47,7 @@
 }
 
 .tag_xmark {
+  flex-shrink: 0;
   width: 1rem;
   height: 1rem;
   margin-left: .5rem;
@@ -59,10 +60,26 @@
   right: .5rem;
   width: 1rem;
   height: 1rem;
-  color: $blue_gray_100;
+  color: $blue_gray_200;
   cursor: pointer;
 }
 
 .action_icon {
   @include button_icon();
+}
+
+@media (max-width: 576px) {
+  .tags_container {
+    min-width: 0;
+  }
+
+  .tag {
+    overflow: hidden;
+  }
+
+  .tag_text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
