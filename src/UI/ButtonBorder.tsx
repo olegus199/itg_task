@@ -4,14 +4,14 @@ import { FC, ReactNode } from "react";
 interface BorderContainerProps {
   children: ReactNode;
   padding?: string;
-  isSaveAndQuitButton?: boolean;
+  isSaveButton?: boolean;
 }
 
-const ButtonBorder: FC<BorderContainerProps> = ({ children, padding, isSaveAndQuitButton }) => {
+const ButtonBorder: FC<BorderContainerProps> = ({ children, padding, isSaveButton }) => {
   return (
     <button
       style={{ padding }}
-      className={`${styles.button} ${isSaveAndQuitButton && styles.save_button}`}
+      className={`${styles.button} ${isSaveButton && styles.save_button}`}
     >
       {children}
     </button>
