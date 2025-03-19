@@ -1,0 +1,37 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.menu {
+  @include hide_scrollbar();
+
+  width: 100%;
+  max-width: 17.5rem;
+  height: 100%;
+  background-color: $blue_gray_300;
+  border-right: $main_border;
+  overflow-y: scroll;
+}
+
+.search_container {
+  @include flex_align_center();
+
+  gap: .5rem;
+  padding: 1rem;
+  background-color: $white;
+  border-bottom: $main_border;
+}
+
+.unpin_icon {
+  @include button_icon();
+}
+
+.menu_item {
+  @include flex_align_center();
+  padding: .625rem 1rem;
+  cursor: pointer;
+}
+
+.chevron {
+  margin-right: .5rem;
+  color: $blue_gray_100;
+}
