@@ -1,0 +1,55 @@
+@use "../../variables" as *;
+@use "../../mixins" as *;
+
+.main_content {
+  position: relative;
+  flex-grow: 1;
+  overflow-x: hidden;
+
+  @include custom_scrollbar($neutral_300, $neutral_200);
+}
+
+.body {
+  padding: 0 1rem 1rem;
+}
+
+.body_content {
+  max-width: $main_content_width;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin grid() {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.top_inputs {
+  @include grid();
+
+  margin-top: 1.5rem;
+}
+
+.middle_inputs {
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bottom_inputs {
+  @include grid();
+
+  margin-top: 1rem;
+}
